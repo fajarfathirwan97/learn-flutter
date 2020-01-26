@@ -5,7 +5,7 @@ import 'package:learn_flutter/Bloc/Todo/TodoState.dart';
 
 class TodoScreen extends StatelessWidget {
   TodoBloc _todoBloc;
-
+  BuildContext _context;
 
   @override
   Widget build(BuildContext context) {
@@ -14,16 +14,6 @@ class TodoScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('USER LIST'),
       ),
-      // body: BlocBuilder<TodoBloc, TodoState>(
-      //   builder: (context, count) {
-      //     return Center(
-      //       child: Text('$count'),
-      //     );
-      //   },
-      // ),
-      // body: BlocBuilder<TodoBloc, TodoState>(
-      //   bloc: BlocProvider.of<TodoBloc>(context),
-      // ),
     );
   }
 }

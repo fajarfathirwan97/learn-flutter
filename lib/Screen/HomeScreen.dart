@@ -8,8 +8,7 @@ class HomeScreen extends StatelessWidget {
   BuildContext _context;
 
   void _navigateToListUser() {
-    Navigator.push(
-        _context, MaterialPageRoute(builder: (_context) => TodoScreen()));
+     Navigator.pushNamed(this._context, '/todo');
   }
 
   @override
