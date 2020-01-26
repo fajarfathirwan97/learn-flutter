@@ -10,19 +10,23 @@ import 'package:learn_flutter/Screen/UserScreen.dart';
 class MainBlocDelegate extends BlocDelegate {
   @override
   void onError(Bloc bloc, Object error, StackTrace stacktrace) {
-    // TODO: implement onError
+    print(error);
+    print(stacktrace);
+    print(bloc);
     super.onError(bloc, error, stacktrace);
   }
 
   @override
   void onEvent(Bloc bloc, Object event) {
-    // TODO: implement onEvent
+    print(event);
+    print(bloc);
     super.onEvent(bloc, event);
   }
 
   @override
   void onTransition(Bloc bloc, Transition transition) {
-    // TODO: implement onTransition
+    print(transition);
+    print(bloc);
     super.onTransition(bloc, transition);
   }
 }

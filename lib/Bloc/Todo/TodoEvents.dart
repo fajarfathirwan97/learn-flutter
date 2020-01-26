@@ -6,14 +6,7 @@ abstract class TodoEvents extends Equatable {
   TodoEvents([List props = const []]) : super(props);
 }
 
-class FetchTodo extends TodoEvents {
-  final int id;
-  final int userId;
-  final String title;
-  final int body;
-  FetchTodo(this.id, this.userId, this.title, this.body)
-      : super([id, userId, title, body]);
-}
+class FetchTodo extends TodoEvents {}
 
 class UpdateTodo extends TodoEvents {
   final int id;
@@ -23,7 +16,6 @@ class UpdateTodo extends TodoEvents {
   UpdateTodo(this.id, this.userId, this.title, this.body)
       : super([id, userId, title, body]);
 }
-
 
 class DeleteTodo extends TodoEvents {
   final int id;
